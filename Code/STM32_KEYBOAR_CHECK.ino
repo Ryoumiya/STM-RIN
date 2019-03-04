@@ -194,8 +194,7 @@ int8_t MagnitueCal(double x){
 	x -= 128;
 	x /= 47;
 	x = x * x * x;
-	int8_t z = (int8_t) x;
-	return z;
+	return (int8_t) x;
 }
 
 void MouseMagnitude(){
